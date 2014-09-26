@@ -20,7 +20,7 @@ module.exports = function(opt) {
     var str = file.contents.toString('utf8');
 
     try {
-      data = coffeeReact(src);
+      data = coffeeReact(str);
     } catch (err) {
       return callback(error(err))
     }
