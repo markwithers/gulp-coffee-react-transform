@@ -2,7 +2,7 @@
 var through = require('through2').obj;
 var gutil = require('gulp-util');
 var Buffer = require('buffer').Buffer;
-var PluginError = require gutil.PluginError;
+var PluginError = gutil.PluginError;
 
 // coffee react transform - converts cjsx files to coffeescript
 var coffeeReact = require('coffee-react-transform');
